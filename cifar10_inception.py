@@ -23,7 +23,7 @@ class ConvBNRelu(Model):
         ])
 
     def call(self, x):
-        x = self.model(x, training=False) #在training=False时，BN通过整个训练集计算均值、方差去做批归一化，training=True时，通过当前batch的均值、方差去做批归一化。推理时 training=False效果好
+        x = self.model(x, training=False)
         return x
 
 
