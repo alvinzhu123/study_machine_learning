@@ -11,6 +11,7 @@ x_img_test_normalize = x_img_test.astype('float32') / 255.
 y_label_train_Onehot = tf.keras.utils.to_categorical(1, len(y_label_train))
 y_label_test_Onehot = tf.keras.utils.to_categorical(1, len(y_label_test))
 #there is sth wrong with the data
+#cqcq i love u
 model = Sequential([
     Embedding(),
     Conv2D(filters=32, kernel_size=(3,3), strides=1, padding='same'),
